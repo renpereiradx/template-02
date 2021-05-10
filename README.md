@@ -1,2 +1,2 @@
-# template-02
+# My Personal Web Site
 My Personal WebSite
