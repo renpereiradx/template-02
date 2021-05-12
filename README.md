@@ -1,2 +1,2 @@
-# My Personal Web Site
-My Personal WebSite
+# My Portfolio
+This repository hosts my portfolio website
