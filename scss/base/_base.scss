@@ -1,0 +1,20 @@
+// Import fonts from google-fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// fonts variables
+$roboto-regular: 'Roboto';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $s;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 56px;
+}
+
+img {
+    max-width: 100% ;
+}
+

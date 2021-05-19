@@ -1,4 +1,26 @@
+// Color palette
+$primary-color: hsl(0, 0%, 90%);
+$secondary-color: hsl(50, 100%, 51%);
+$tertiary-color: hsl(0, 0%, 78%);
 
+// Font size
+$m: 16px;
+$s: $m * 0.8;
+$xs: $m * 0.7;
+$l: $m * 1.25;
+$xl: $m * 1.5;
+$xxl: $m * 2.5;
 
+// Design variables
+$gutter: 16px;
+$gutter-s: 8px;
+$gutter-l: 32px;
+$gutter-x: 100px;
 
-@import "library/hamburgers/hamburgers.scss"
+$max-width: 1400px;
+
+@import "base/base";
+@import "base/normalize";
+@import "library/hamburgers/hamburgers-settings.scss";
+@import "library/hamburgers/hamburgers.scss";
+@import "layout/index";
