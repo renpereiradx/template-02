@@ -9,6 +9,7 @@ $roboto-regular: 'Roboto';
 }
 
 body {
+    background-color: $background-color;
     font-size: $s;
     font-family: 'Roboto', sans-serif;
     margin-top: 56px;
