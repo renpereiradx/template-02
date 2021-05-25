@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>My Portfolio</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header id="main-header" class="main-header main-container">
-      <!-- Toggle menu -->
+      <!-- Profile Picture -->
+      <picture class="main-header__profilepicture">
+        <img
+          src="resources/img/pexels-mohamed-abdelghaffar-771742.jpg"
+          alt="Profile Picture"
+          class="profile"
+        />
+      </picture>
+      <!-- Toggle hamburgers menu -->
       <div class="hamburger-button">
         <button
           id="hamburger-button"
@@ -41,29 +51,56 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main class="main-content main-container">
-      <div class="main-content__container">
-        <h1 class="main-content__first-text">HI THERE</h1>
-        <div class="main-content__second-text">
-          <h2 class="main-content__second-text-1">I'M</h2>
-          <h2 class="main-content__second-text-2">René Pereira</h2>
-          <h2 class="main-content__second-text-2">A PROGRAMMER</h2>
-          <h2 class="main-content__second-text-4">A FREELANCER</h2>
+      <!-- Introducing myself. -->
+      <div class="main-header__presentation">
+        <div class="presentation__container">
+          <h1 class="presentation__first-text">HI THERE</h1>
+          <div class="presentation__second-text">
+            <h2 class="presentation__second-text-1">I'M</h2>
+            <h2 class="presentation__second-text-2">René Pereira</h2>
+            <h2 class="presentation__second-text-3">A PROGRAMMER</h2>
+            <h2 class="presentation__second-text-4">A FREELANCER</h2>
+          </div>
+          <p class="presentation__intro">
+            I'm a developer from Paraguay passionate about the back-end and
+            lately getting into the front-end focused on create clean and easy
+            to use experiences, I'm passionate about building excellent software
+            that improves the lives of those around me.
+          </p>
+          <button id="about" class="presentation__about button" type="button">
+            MORE ABOUT ME
+          </button>
         </div>
-        <h3 class="main-content__third-text">
-          I'm a developer from Paraguay passionate about the back-end and
-          lately getting into the front-end focused on create clean and easy to
-          use experiences, I'm passionate about building excellent software
-          that improves the lives of those around me.
-        </h3>
-        <button id="about" class="main-content__about button" type="button">
-          MORE ABOUT ME
-        </button>
+      </div>
+    </header>
+    <!-- ABOUT ME -->
+    <main id="aboutme" class="aboutme main-container">
+      <h2 class="aboutme__title">ABOUT ME</h2>
+      <!-- Personal info container -->
+      <div class="aboutme__personal-info">
+        <h3 class="personal-info__title">PERSONAL INFOS</h3>
+        <!-- First sub container -->
+        <div class="personal-info__row-element">          
+          <!-- Row to display data -->
+          <div class="row-element__content">
+            <!-- ul list-->
+          </div>
+        </div>
+        <!-- Second sub container -->
+        <div class="personal-info__row-element">
+          <div class="row-element__content">
+            <!-- ul list -->
+          </div>
+        </div>
+      </div>
+      <!-- My Skills Container -->
+      <div class="aboutme__skills">
+        <!-- Content?? -->
+      </div>
+      <!-- Experience and Education -->
+      <div class="aboutme__exp-edu">
+        <!-- Content?? -->
       </div>
     </main>
-    <section id="profilepicture" class="main-profilepicture main-container">
-      <div class="picture-container"></div>
-    </section>
   </body>
 </html>
