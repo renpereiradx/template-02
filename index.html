@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://file.myfontastic.com/7pPh7psSn4fbcexfEXm8SB/icons.css"
       rel="stylesheet"
@@ -39,48 +44,36 @@
               <a href="#" class="main-menu__link button">Main</a>
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link button">About</a>
+              <a href="#" class="main-menu__link button">About me</a>
             </li>
             <li class="main-menu__item">
-              <a href="#" class="main-menu__link button">Contact</a>
+              <a href="#" class="main-menu__link button">Contact me</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <!-- ABOUT ME -->
+    <!-- Introduction -->
     <main id="main-content" class="main-content main-container">
       <!-- Profile Picture -->
-      <picture class="main-content__profile-picture">
-        <img
-          src="resources/img/pexels-mohamed-abdelghaffar-771742.jpg"
-          alt="Profile Picture"
-          class="profile"
-        />
-      </picture>
+      <div class="main-content__picture">
+        <picture class="main-content__picture-profile">
+          <img
+            src="resources/img/pexels-mohamed-abdelghaffar-771742.jpg"
+            alt="Profile Picture"
+            class="profile"
+          />
+        </picture>
+      </div>
       <!-- Introducing myself. -->
       <div class="main-content__presentation">
         <div class="presentation__container">
-          <h1 class="presentation__first-text">HI THERE</h1>
-          <div class="presentation__second-text">
-            <h2 class="presentation__second-text-1">I'M</h2>
-            <h2 class="presentation__second-text-2">René Pereira</h2>
-            <h2 class="presentation__second-text-3">A PROGRAMMER</h2>
-            <h2 class="presentation__second-text-4">A FREELANCER</h2>
-          </div>
-          <p class="presentation__intro">
-            I'm a developer from Paraguay passionate about the back-end and
-            lately getting into the front-end focused on create clean and easy
-            to use experiences, I'm passionate about building excellent software
-            that improves the lives of those around me.
-          </p>
-          <button
-            id="more-about"
-            class="presentation__about button"
-            type="button"
-          >
-            MORE ABOUT ME
-          </button>
+          <h1 class="presentation__first-text">HI THERE, I AM</h1>
+          <h2 class="presentation__second-tex">René Pereira</h2>
+          <h3 class="presentation__third-text">
+            Front-end Developer / Back-end / Mid-Core Gamer
+            <span class="icon-gamepad"></span>
+          </h3>
         </div>
       </div>
       <!-- Social Network -->
@@ -90,10 +83,31 @@
         <a href="#" class="icon-linkedin"></a>
       </div>
     </main>
-
+    <!-- It Berries -->
+    <section class="it-berries">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta debitis doloremque. Fugit ullam, quidem vel impedit cum nihil consequatur voluptatem praesentium excepturi, inventore, magnam odit? Natus officiis facere aperiam.</p>
+    </section>
     <!-- About Me -->
     <section id="aboutme" class="aboutme main-container">
       <h2 class="aboutme__title">ABOUT ME</h2>
+      <!-- A little introduction about me -->
+      <div class="aboutme__intro-container">
+        <h2 class="aboutme__title"></h2>
+        <p class="aboutme__text">
+          I'm a developer from Paraguay passionate about the back-end and lately
+          getting into the front-end focused on create clean and easy to use
+          experiences, I'm passionate about building excellent software that
+          improves the lives of those around me.
+        </p>
+        <button
+          id="more-about"
+          class="aboutme__more-aboutme button"
+          type="button"
+        >
+          MORE ABOUT ME
+        </button>
+      </div>
+
       <!-- Personal info container -->
       <div class="aboutme__personal-info">
         <h3 class="aboutme__personal-info__title title--highlighted">
@@ -156,15 +170,15 @@
         </div>
       </div>
     </section>
-   
+
     <script>
-      let hamburger = document.getElementById('hamburger-button'),
-      menuContainer = document.getElementById('menu'),
-      menuNav = document.getElementById('main-nav')
-      hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('is-active');
-        menuContainer.classList.toggle('show');
-      })
+      let hamburger = document.getElementById("hamburger-button"),
+        menuContainer = document.getElementById("menu"),
+        menuNav = document.getElementById("main-nav");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("is-active");
+        menuContainer.classList.toggle("show");
+      });
     </script>
   </body>
 </html>

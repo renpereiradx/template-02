@@ -2,43 +2,58 @@
   .main-nav {
     width: 100%;
     height: 100%;
-    padding-top: 4.5em;
-    padding-left: 3em;
-    background-color: hsl(0, 0%, 49%);
+    padding-top: 4em;
+    background-image: url("/resources/img/backgrounds/mobile.jpg");
 
     .main-menu {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding-left: 0%;
       list-style: none;
-      font-family: Roboto, sans-serif;
-      font-weight: 800;
-      font-size: 2.5em;
+      font-family: "Baloo Tammudu 2", cursive;
+      font-weight: 600;
+      font-size: 1.3em;
+      z-index: 20;
 
       &__item {
-          margin-bottom: $gutter-l;
+        margin-bottom: $gutter-l;
       }
 
       &__link {
-          display: inline-block;
-          letter-spacing: .1em;
-          color: $primary-color;
-          text-decoration: none;
-          text-align: center;
-          
-          &::after {
-            content: '';
-            display: block;
-            background-color: $tertiary-color;
-            margin-top: $gutter-s;
-            height: 1px;
-            width: 105%;
-            transform: scale(0, 6);
-            transform-origin: center left;
-            transition: transform .3s;
-          }
+        display: block;
+        //letter-spacing: 0.1em;
+        color: $primary-color;
+        text-decoration: none;
+        text-align: center;
 
-          &:hover::after {
-            transform: scale(1, 6);
+        &::after {
+          content: "";
+          display: block;
+          background-color: $tertiary-color;
+          margin-top: $gutter-s;
+          height: 1px;
+          width: 105%;
+          transform: scale(0, 6);
+          transform-origin: center left;
+          transition: transform 0.3s;
+        }
+
+        &:hover::after {
+          transform: scale(1, 6);
         }
       }
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(73, 73, 73, 0.568);
+      z-index: 10;
     }
   }
 }

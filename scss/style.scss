@@ -4,6 +4,7 @@ $secondary-color: hsl(40, 100%, 51%);
 $tertiary-color: hsl(210, 20%, 96%);
 $quaternary-color: hsl(12, 100%, 55%);
 $background-color: hsl(300, 7%, 3%);
+$secondary-background-color: hsl(0, 0%, 43%);
 
 // Font size
 $m: 16px;
@@ -24,6 +25,6 @@ $max-width: 1400px;
 @import "base/base";
 @import "base/normalize";
 @import "library/hamburgers/hamburgers.scss";
-@import "layout/index";
 @import "layout/header";
 @import "themes/menu";
+@import "layout/main";
