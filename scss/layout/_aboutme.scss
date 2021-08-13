@@ -1,0 +1,61 @@
+.aboutme {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url(/resources/img/backgrounds/aboutme/aboutme-bg1.jpeg);
+  background-position: 50% 50%;
+  color: $tertiary-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+  }
+
+  &__title {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    padding-top: 2em;
+    font-size: 2.5em;
+    letter-spacing: 0.13em;
+  }
+
+  &__intro-container {
+    position: relative;
+    width: 79%;
+    margin: 0 auto;
+
+    .aboutme__text {
+      font-family: $font-noto-sans;
+      font-size: 1.2em;
+      text-align: justify;
+      line-height: 1.6em;
+    }
+  }
+
+  &__more {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: .2em 0;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    border-style: none solid;
+    border-width: 0 0.15em;
+    border-left-color: $tertiary-color;
+    border-right-color: $tertiary-color;
+    color: $tertiary-color;
+
+    span {
+        margin: 0 1.5em;
+        font-size: 1.3em;
+        letter-spacing: .2em;
+    }
+  }
+}
