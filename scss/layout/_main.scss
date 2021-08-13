@@ -1,39 +1,25 @@
 .main-content {
   position: relative;
-  top: $gutter-s;
-  width: 100%;
-  height: auto;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 
   &__picture {
     position: relative;
     width: 100%;
-    height: 100vh;
-    top: $gutter-l;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
 
-    // &::before {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-image: linear-gradient(
-    //     -10deg,
-    //     rgba($tertiary-color, .70) 40%,
-    //     rgba($primary-color, 0) 40%
-    //   );
-    //   z-index: 10;
-    // }
-
     &::before {
       content: "";
       position: absolute;
-      top: 45%;
+      top: 55%;
       width: 100%;
       height: 100%;
-      background-color: rgba(87, 87, 87, 0.70);
-      transform: rotate(75deg);
+      background-color: rgba(87, 87, 87, .70);
+      transform: rotate(80deg);
       z-index: 10;
     }
 
@@ -43,7 +29,42 @@
       height: 100%;
       margin-right: auto;
       margin-left: auto;
-      //border-radius: 50%;
     }
   }
+
+  &__intro {
+    position: absolute; 
+    width: 85%;
+    height: 11em;
+    bottom: 0%;
+    z-index: 20;
+
+    .intro-container {
+      position: absolute;
+      left: 8%;
+      top: 14%;
+      font-family: 'Baloo Tammudu 2', cursive;
+      color: $primary-color;
+
+      &__first-text {
+        margin-bottom: .1em;
+        font-size: 1.4em;
+        font-weight: 500;
+      }
+      &__second-text {
+        margin-top: 0;
+        margin-bottom: .1em;
+        font-size: 2.7em;
+        font-weight: 500;
+      }
+      &__third-text {
+        margin-top: 0;
+        margin-bottom: .1em;
+        font-size: .95em;
+        font-weight: 500;
+        color: $tertiary-color;
+      }
+    }
+  }
+
 }

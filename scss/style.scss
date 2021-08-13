@@ -3,8 +3,12 @@ $primary-color: hsl(142, 100%, 98%);
 $secondary-color: hsl(40, 100%, 51%);
 $tertiary-color: hsl(210, 20%, 96%);
 $quaternary-color: hsl(12, 100%, 55%);
-$background-color: hsl(300, 7%, 3%);
-$secondary-background-color: hsl(0, 0%, 43%);
+$quinary-color: hsl(300, 7%, 3%);
+$senary-color: hsl(0, 0%, 43%);
+
+// Font family
+$font-roboto: 'Roboto', sans-serif;
+$font-noto-sans: 'Noto Sans JP', sans-serif;
 
 // Font size
 $m: 16px;
@@ -17,8 +21,9 @@ $xxl: $m * 2.5;
 // Design variables
 $gutter: 16px;
 $gutter-s: 8px;
+$gutter-xs: 4px;
 $gutter-l: 32px;
-$gutter-x: 100px;
+$gutter-xl: 100px;
 
 $max-width: 1400px;
 
@@ -28,3 +33,5 @@ $max-width: 1400px;
 @import "layout/header";
 @import "themes/menu";
 @import "layout/main";
+@import "themes/socialnetwork";
+@import "layout/presentation";

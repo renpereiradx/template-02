@@ -1,59 +1,135 @@
 .main-header {
-  .main-nav {
+  .menu-container {
+    position: absolute;
     width: 100%;
-    height: 100%;
-    padding-top: 4em;
+    height: 100vh;
+    top: 0;
     background-image: url("/resources/img/backgrounds/mobile.jpg");
+    transform: scale(0, 0);
+    transform-origin: left top;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
 
-    .main-menu {
-      position: relative;
-      width: 100%;
-      height: auto;
-      padding-left: 0%;
-      list-style: none;
-      font-family: "Baloo Tammudu 2", cursive;
-      font-weight: 600;
-      font-size: 1.3em;
-      z-index: 20;
-
-      &__item {
-        margin-bottom: $gutter-l;
-      }
-
-      &__link {
-        display: block;
-        //letter-spacing: 0.1em;
-        color: $primary-color;
-        text-decoration: none;
-        text-align: center;
-
-        &::after {
-          content: "";
-          display: block;
-          background-color: $tertiary-color;
-          margin-top: $gutter-s;
-          height: 1px;
-          width: 105%;
-          transform: scale(0, 6);
-          transform-origin: center left;
-          transition: transform 0.3s;
-        }
-
-        &:hover::after {
-          transform: scale(1, 6);
-        }
-      }
+    &.show {
+      transform: scale(1, 1);
+      visibility: visible;
+      opacity: 1;
+      z-index: 80;
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(73, 73, 73, 0.568);
+      background-color: rgba(73, 73, 73, 0.5);
       z-index: 10;
     }
+
+    .main-nav {
+      width: 100%;
+      height: auto;
+  
+      .main-menu {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-top: 4em;
+        padding-left: 0%;
+        list-style: none;
+        background-color: rgba($color: $quinary-color, $alpha: 0.77);
+        z-index: 20;
+  
+        &__item {
+          display: block;
+          width: 100%;
+          height: 4em;
+          position: relative;
+  
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: $tertiary-color;
+            transform: scale(0, 1);
+            transform-origin: center left right;
+            transition: all 0.5s;
+            z-index: 30;
+          }
+          
+  
+          &:hover::before {
+            transform: scale(1, 1);
+          }
+        }
+  
+        &__link {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          height: 100%;
+          font-family: "Baloo Tammudu 2", cursive;
+          font-weight: 400;
+          font-size: 1em;
+          color: $tertiary-color;
+          text-decoration: none;
+          text-align: center;
+          letter-spacing: 0.1em;
+          line-height: 3.5em;
+          transition: all 0.8s;
+          z-index: 40;
+  
+          &:hover {
+            font-weight: 500;
+            color: $quinary-color;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+
+    .social-network {
+      position: relative;
+      z-index: 40;
+
+      .first-text {
+        position: relative;
+        display: block;
+        height: 2em;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.7em;
+        font-weight: 300;
+        text-align: center;
+        line-height: 2em;
+        margin-top: $gutter-s;
+        margin-bottom: $gutter-l;
+
+        &::after {
+          content: '';
+          position: relative;
+          display: block;
+          width: 65%;
+          height: 1px;
+          margin: $gutter-s auto;
+          background-color: $tertiary-color;
+        }
+      }
+
+      &__container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 65%;
+        margin: 0 auto;
+        font-size: 1.4em;
+      }
+    }
   }
+  
 }

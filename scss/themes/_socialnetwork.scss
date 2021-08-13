@@ -1,0 +1,27 @@
+.main-content {
+  .social-network {
+    position: absolute;
+    top: 69%;
+    right: 8%;
+    height: 10em;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    //background-color: rgba($color: red, $alpha: 0.7);
+    z-index: 20;
+
+    [class*="icon-"] {
+      color: $primary-color;
+      font-size: 2.2em;
+      text-decoration: none;
+    }
+  }
+}
+
+[class*="icon-"] {
+  color: $primary-color;
+  font-size: 1.5em;
+  text-decoration: none;
+}

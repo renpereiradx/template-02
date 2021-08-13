@@ -11,9 +11,21 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -40,17 +52,42 @@
       <div id="menu" class="menu-container">
         <nav id="nav" class="main-nav">
           <ul class="main-menu">
-            <li class="main-menu__item">
-              <a href="#" class="main-menu__link button">Main</a>
+            <li id="item-first" class="main-menu__item">
+              <a href="#main-content" class="main-menu__link button">Main</a>
             </li>
-            <li class="main-menu__item">
+            <li id="item-second" class="main-menu__item">
               <a href="#" class="main-menu__link button">About me</a>
             </li>
-            <li class="main-menu__item">
+            <li id="item-third" class="main-menu__item">
               <a href="#" class="main-menu__link button">Contact me</a>
             </li>
           </ul>
         </nav>
+        <div class="social-network">
+          <h3 class="first-text">Follow me</h3>
+          <div class="social-network__container">
+            <a
+              href="https://github.com/renpereiradx"
+              class="icon-github-square"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/hugo-ren%C3%A9-pereira-6517b7121/"
+              class="icon-linkedin-square"
+              target="_blank"
+            ></a>
+            <a
+              href="https://steamcommunity.com/id/darthrpm/"
+              class="icon-steam-square"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto: rene_dx92@hotmail.com"
+              class="icon-envelope"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
       </div>
     </header>
     <!-- Introduction -->
@@ -60,32 +97,63 @@
         <picture class="main-content__picture-profile">
           <img
             src="resources/img/pexels-mohamed-abdelghaffar-771742.jpg"
-            alt="Profile Picture"
+            alt="Profile Picture. This isn't my photo. It's from Pexels"
             class="profile"
           />
         </picture>
       </div>
       <!-- Introducing myself. -->
-      <div class="main-content__presentation">
-        <div class="presentation__container">
-          <h1 class="presentation__first-text">HI THERE, I AM</h1>
-          <h2 class="presentation__second-tex">René Pereira</h2>
-          <h3 class="presentation__third-text">
-            Front-end Developer / Back-end / Mid-Core Gamer
+      <div class="main-content__intro">
+        <div class="intro-container">
+          <h1 class="intro-container__first-text">Hi there, I am</h1>
+          <h2 class="intro-container__second-text">Hugo Pereira</h2>
+          <h3 class="intro-container__third-text">
+            Back-end & Front-end Developer <br />
+            Mid-Core Gamer &nbsp;
             <span class="icon-gamepad"></span>
           </h3>
         </div>
       </div>
       <!-- Social Network -->
       <div class="social-network">
-        <a href="#" class="icon-mail"></a>
-        <a href="#" class="icon-github"></a>
-        <a href="#" class="icon-linkedin"></a>
+        <a
+          href="mailto: rene_dx92@hotmail.com"
+          class="icon-at"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/renpereiradx"
+          class="icon-github"
+          target="_blank"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/hugo-ren%C3%A9-pereira-6517b7121/"
+          class="icon-linkedin"
+          target="_blank"
+        ></a>
       </div>
     </main>
-    <!-- It Berries -->
-    <section class="it-berries">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dicta debitis doloremque. Fugit ullam, quidem vel impedit cum nihil consequatur voluptatem praesentium excepturi, inventore, magnam odit? Natus officiis facere aperiam.</p>
+    <!-- Presentation-->
+    <section id="presentation" class="presentation">
+      <div class="presentation__subject">
+        <h2 class="subject__title">
+          ABOUT ME
+        </h2>
+        <p>
+          My name is Hugo Pereira, I'm a fourth year Applied Informatics
+          Engineering student at the Universidad Privada del Este in
+          Hernandarias. I have been learning Front-End technologies for a year
+          and this time was just enough for me to make sure that this is my
+          place in the industry.
+        </p>
+        <p>
+          Membership in the science club developed my design skills, which
+          quickly turned into a new hobby. I am begginer in English yet and
+          intermediate Portuguese (spoken and written). Apart from designing and
+          programming, my passion is all kinds of videogames - from arcade to
+          shots royal.
+        </p>
+      </div>
     </section>
     <!-- About Me -->
     <section id="aboutme" class="aboutme main-container">
