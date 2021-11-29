@@ -1,7 +1,7 @@
 .main-content {
   position: relative;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   &__picture {
@@ -18,7 +18,7 @@
       top: 55%;
       width: 100%;
       height: 100%;
-      background-color: rgba(87, 87, 87, .70);
+      background-color: rgba(87, 87, 87, 0.7);
       transform: rotate(80deg);
       z-index: 10;
     }
@@ -33,7 +33,7 @@
   }
 
   &__intro {
-    position: absolute; 
+    position: absolute;
     width: 85%;
     height: 11em;
     bottom: 0%;
@@ -43,28 +43,126 @@
       position: absolute;
       left: 8%;
       top: 14%;
-      font-family: 'Baloo Tammudu 2', cursive;
+      font-family: "Baloo Tammudu 2", cursive;
       color: $primary-color;
 
       &__first-text {
-        margin-bottom: .1em;
+        margin-bottom: 0.1em;
         font-size: 1.4em;
         font-weight: 500;
       }
       &__second-text {
         margin-top: 0;
-        margin-bottom: .1em;
+        margin-bottom: 0.1em;
         font-size: 2.7em;
         font-weight: 500;
       }
       &__third-text {
         margin-top: 0;
-        margin-bottom: .1em;
-        font-size: .95em;
+        margin-bottom: 0.1em;
+        font-size: 0.95em;
         font-weight: 500;
         color: $tertiary-color;
       }
     }
   }
 
+  // Media queries to mobile devices
+  @media (min-height: 560px) {
+    &__picture {
+      &::before {
+        top: 45%;
+      }
+    }
+
+    &__intro {
+      bottom: 6%;
+      .intro-container {
+        &__first-text {
+          margin-bottom: 0.4em;
+        }
+        &__second-text {
+          margin-bottom: 0.4em;
+        }
+        &__third-text {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  @media (min-height: 665px) {
+    &__picture {
+      &::before {
+        top: 48%;
+      }
+    }
+
+    &__intro {
+      bottom: 7%;
+      .intro-container {
+        &__first-text {
+          font-size: 1.7em;
+          margin-bottom: 0.3em;
+        }
+        &__second-text {
+          font-size: 3em;
+          margin-bottom: 0.3em;
+        }
+        &__third-text {
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  @media (min-height: 730px) {
+    &__picture {
+      &::before {
+        top: 43%;
+      }
+    }
+
+    &__intro {
+      bottom: 11%;
+      .intro-container {
+        &__first-text {
+          font-size: 1.9em;
+          margin-bottom: 0.4em;
+        }
+        &__second-text {
+          font-size: 3.2em;
+          margin-bottom: 0.4em;
+        }
+        &__third-text {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+
+  @media (min-height: 810px) {
+    &__picture {
+      &::before {
+        top: 44%;
+      }
+    }
+
+    &__intro {
+      bottom: 9%;
+      .intro-container {
+        &__first-text {
+          font-size: 2em;
+          margin-bottom: 0.5em;
+        }
+        &__second-text {
+          font-size: 3.3em;
+          margin-bottom: 0.5em;
+        }
+        &__third-text {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
 }

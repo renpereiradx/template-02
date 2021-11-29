@@ -49,3 +49,11 @@
 /* Samsung Galaxy S5 ----------- / @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){ / Styles */ }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){ /* Styles */
+
+/*
+I work with these ...
+min-height: 560px
+min-height: 665px
+min-height: 730px
+min-height: 810px
+*/

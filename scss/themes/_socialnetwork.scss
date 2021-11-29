@@ -18,6 +18,38 @@
       text-decoration: none;
     }
   }
+
+  @media (min-height: 560px) {
+    .social-network {
+      top: 70%;
+      height: 11em;
+    }
+  }
+
+  @media (min-height: 665px) {
+    .social-network {
+      height: 14em;
+
+      [class*="icon-"] {
+        color: $primary-color;
+        font-size: 3em;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (min-height: 810px) {
+    .social-network {
+      top: 72%;
+      height: 15em;
+
+      [class*="icon-"] {
+        color: $primary-color;
+        font-size: 3.2em;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 [class*="icon-"] {

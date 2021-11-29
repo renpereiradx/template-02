@@ -1,7 +1,7 @@
 .aboutme {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url(/resources/img/backgrounds/aboutme/aboutme-bg1.jpeg);
   background-position: 50% 50%;
   color: $tertiary-color;
@@ -11,19 +11,19 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.9);
+    background-color: rgba($color: #000000, $alpha: 0.95);
   }
 
   &__title {
     display: inline-block;
     position: relative;
     width: 100%;
-    text-align: center;
     margin-top: 0;
     margin-bottom: 0.2em;
     padding-top: 2em;
-    font-size: 2.5em;
-    letter-spacing: 0.13em;
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 0.15em;
   }
 
   &__intro-container {
@@ -44,7 +44,7 @@
     display: block;
     margin: 0 auto;
     margin-top: 4em;
-    padding: .2em 0;
+    padding: 0.2em 0;
     background-color: rgba($color: #000000, $alpha: 0.1);
     border-style: none solid;
     border-width: 0 0.15em;
@@ -53,9 +53,79 @@
     color: $tertiary-color;
 
     span {
-        margin: 0 1.5em;
-        font-size: 1.3em;
-        letter-spacing: .2em;
+      margin: 0 1.5em;
+      font-family: $font-roboto;
+      font-weight: 500;
+      font-size: 1.3em;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  @media (min-height: 560px) {
+    &__intro-container {
+      margin-top: $gutter-l;
+      .aboutme__text {
+        line-height: 2em;
+      }
+    }
+
+    &__more {
+      margin-top: 5em;
+    }
+  }
+
+  @media (min-height: 665px) {
+    &__title {
+      font-size: 2.5em;
+    }
+
+    &__intro-container {
+      width: 80%;
+      .aboutme__text {
+        font-size: 1.4em;
+      }
+    }
+
+    &__more {
+      margin-top: 6em;
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  @media (min-height: 730px) {
+    &__title {
+      font-size: 3.1em;
+    }
+
+    &__intro-container {
+      .aboutme__text {
+        font-size: 1.6em;
+      }
+    }
+
+    &__more {
+      margin-top: 7em;
+      span {
+        font-size: 1.6em;
+      }
+    }
+  }
+
+  @media (min-height: 810px) {
+    &__intro-container {
+      .aboutme__text {
+        font-size: 1.6em;
+        line-height: 2.3em;
+      }
+    }
+
+    &__more {
+      margin-top: 7.5em;
+      span {
+        font-size: 1.7em;
+      }
     }
   }
 }

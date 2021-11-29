@@ -1,0 +1,66 @@
+.skills {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 84%);
+  margin-top: 0;
+  padding-top: 4em;
+  padding-bottom: 1em;
+  
+  &__title {
+      position: relative;
+      display: block;
+      width: 50%;
+      padding: .8em;
+      margin-top: 0;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: solid;
+      border-width: .4em;
+      text-align: center;
+      font-size: 1.2em;
+      font-weight: 800;
+      color: $quinary-color;
+      letter-spacing: .30em;
+  }
+
+  .skills__sub-title {
+    position: relative;
+    display: inline-block;
+    margin-top: 1em;
+    margin-bottom: 1.2em;
+    width: 100%;
+    font-size: 2.5em;
+    color: $quinary-color;
+    text-align: center;
+    letter-spacing: .20em;
+    text-transform: uppercase;
+  }
+
+  .skills__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 1.5em;
+    text-align: center;
+    color: $quinary-color;
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+
+    img {
+      width: 30%;
+      margin-bottom: .5em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media (min-height: 730px) {
+    &__title {
+      margin-top: $gutter-l;
+    }
+  }
+}
